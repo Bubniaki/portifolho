@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu Portfólio</title>
+</head>
+
+<body>
+    <header class="container text-center">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Meu Portfólio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Início</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Projetos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#projeto1">Projeto 1</a></li>
+                                <li><a class="dropdown-item" href="#projeto2">Projeto 2</a></li>
+                                <li><a class="dropdown-item" href="#projeto3">Projeto 3</a></li>
+                                <li><a class="dropdown-item" href="#projeto4">Projeto 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2dF85al3ZDirwlN0mLxt2Aomz7EGT0arBlA&s" alt="Avatar do Eduardo" class="rounded-circle" width="150" height="150">
+        <p class="lead">Trabalho desenvolvido por Eduardo Bubniaki</p>
+        <h1>Minha história no colégio</h1>
+        <strong><p>Sou um estudante do Colégio Estadual Padre Claudio Morelli. Neste portfólio, mostrarei como foi minha experiência nesta instituição, tanto no ensino fundamental quanto no médio.</p></strong>
+    </header>
+    
+    <main class="container mt-5">
+        <h2 class="text-center">Melhores memórias</h2>
+        <div class="row text-center">
+            <!-- Projeto 1 -->
+            <div class="col-md-6 project-card" id="projeto1">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">A Lata de Lixo</h5>
+                        <div class="project-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdlmt0BH-ZNFSDFDVXk7lMoh89xjTKSEBwCQ&s); height: 200px; background-size: cover;"></div>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Conheça a história</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Projeto 2 -->
+            <div class="col-md-6 project-card" id="projeto2">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Passeio ao Memorial da Segurança no Transporte no Brasil</h5>
+                        <div class="project-image" style="background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/58/1f/03/fachada-memorial-da-seguranca.jpg?w=1200&h=1200&s=1); height: 200px; background-size: cover;"></div>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Conheça a história</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center mt-4">
+            <!-- Projeto 3 -->
+            <div class="col-md-6 project-card" id="projeto3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Visita ao Museu do Egito</h5>
+                        <div class="project-image" style="background-image: url(https://muralzinhodeideias.com.br/wp-content/uploads/2022/10/museututankhamon-divulgacao.jpg); height: 200px; background-size: cover;"></div>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Conheça a história</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Projeto 4 -->
+            <div class="col-md-6 project-card" id="projeto4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Dias das Crianças no Quinto Ano</h5>
+                        <div class="project-image" style="background-image: url(https://viagemclub.com.br/wp-content/uploads/2022/05/campo-base-ginasio-de-escalada-1-1024x680.jpg); height: 200px; background-size: cover;"></div>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal4">Conheça a história</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modais dos Projetos -->
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">A Lata de Lixo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>No primeiro dia de aula, eu estava no recreio e fui jogar meu alimento no lixo. Havia um protótipo atrás dele. Eu esbarrei nele e derrubei toda a comida no chão. Essa é uma memória que, por algum motivo, guardei.</p>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Decidindo o Futuro: Uma Jornada Interativa sobre a Inteligência Artificial</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Nessa vez, fomos até um lugar para ver como foi o desenvolvimento de automóveis, por exemplo, e como funcionavam certas consequências de dirigirmos embriagados. Uma batida e muitas histórias importantes de serem levadas para a vida.</p>
+                   
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Visita ao Museu do Egito</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Nesse dia, fomos ao Museu de História Egípcia e vimos muitas histórias importantes sobre esse povo. Apesar de essa visita ter sido no sexto ano, consigo lembrar de quase tudo que vimos lá, até a múmia eu me lembro com exatidão.</p>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal" id="modal4" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Dias das Crianças no Quinto Ano</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Algo que aconteceu antes de eu ir para o Morelli, foi que no quinto ano fomos em um lugar para comemorar os dias das crianças em uma escola enorme que tinha até tirolesa. Foi um dos passeios que eu mais tive interesse de ir, pelo motivo claro né.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Contato -->
+    <div class="modal" id="contactModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contato</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Tem não!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container py-5">
+        <h2></h2>
+        <div></div>
+    </footer>
+
+    <!-- Botão de Voltar ao Topo -->
+    <a href="#" id="backToTop" class="btn btn-primary" style="display: none;">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Mostra o botão quando o usuário rolar para baixo
+        window.onscroll = function() {
+            const backToTopButton = document.getElementById('backToTop');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        };
+
+        // Rolagem suave ao clicar em links do menu
+        document.querySelectorAll('.navbar-nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Rolagem suave ao clicar no botão
+        document.getElementById('backToTop').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+<footer class="container py-5 text-center">
+    <p>Eduardo Bubniaki - 2 C</p>
+</footer>
+
+</html>

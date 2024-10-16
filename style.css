@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --cor-principal: #050a0f;
+    --cor-secundaria: #060658;
+    --cor-destaque: #053691ab;
+    --bg-imagem: url(https://img.freepik.com/vetores-gratis/fundo-de-tecnologia-digital-de-fio-de-rede_1017-27428.jpg?size=626&ext=jpg&ga=GA1.1.1141335507.1728864000&semt=ais_hybrid); /* Insira o link da imagem aqui */
+}
+
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    color: var(--cor-principal);
+    background-image: var(--bg-imagem); /* Adiciona a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+}
+
+h1, h2, h5 {
+    color: var(--cor-secundaria);
+    font-weight: 700;
+}
+
+.lead, .btn-link {
+    color: var(--cor-destaque);
+    font-weight: 700;
+}
+
+a, .btn-link:hover {
+    color: var(--cor-principal);
+}
+
+a:hover {
+    color: var(--cor-destaque);
+}
+
+.navbar {
+    background-color: var(--cor-secundaria);
+}
+
+.nav-link {
+    color: var(--cor-destaque);
+}
+
+.nav-link:hover {
+    color: rgb(35, 219, 19); /* Altera a cor ao passar o mouse */
+}
+
+.dropdown-menu {
+    background-color: var(--cor-secundaria); /* Fundo do menu dropdown */
+}
+
+.dropdown-item {
+    color: var(--cor-destaque);
+}
+
+.dropdown-item:hover {
+    background-color: var(--cor-destaque);
+    color: rgb(37, 39, 172); /* Altera a cor do texto ao passar o mouse */
+}
+#backToTop {
+    display: none; /* Escondido por padrão */
+    transition: display 0.3s;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+.project-card {
+    margin-bottom: 30px; /* Adiciona espaço entre os blocos */
+}
+.project-image {
+    width: 100%; /* Faz a imagem ocupar toda a largura */
+    height:200px; /* Define uma altura fixa */
+    object-fit: cover; /* Cobre o espaço sem distorcer */
+    background-color: #f0f0f0; /* Cor de fundo para a área da imagem */
+}
